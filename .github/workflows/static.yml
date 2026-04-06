@@ -1,10 +1,8 @@
-# Deploy Docusaurus site to GitHub Pages
 name: Deploy Docusaurus to GitHub Pages
 
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -31,11 +29,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Docusaurus
         run: npm run build
@@ -43,11 +41,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build folder
+      - name: Upload build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build   # ⚡ IMPORTANT: Docusaurus output
+          path: ./build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5

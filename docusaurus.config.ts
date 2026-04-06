@@ -10,7 +10,7 @@ const config: Config = {
     v4: true,
   },
   url: 'https://keynetra.dev',
-  baseUrl: '/docs',
+  baseUrl: '/keynetra-docs',
   organizationName: 'keynetra',
   projectName: 'keynetra',
   onBrokenLinks: 'throw',

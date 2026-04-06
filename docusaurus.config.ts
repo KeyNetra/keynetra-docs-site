@@ -25,7 +25,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          path: '../docs',
+          path: 'docs',
           editUrl: 'https://github.com/keynetra/keynetra-core/tree/main/',
         },
         blog: {

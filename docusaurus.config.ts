@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://keynetra.dev',
   baseUrl: '/',
   organizationName: 'keynetra',
-  projectName: 'keynetra-core',
+  projectName: 'keynetra',
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
@@ -25,8 +25,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          path: '../docs',
-          editUrl: 'https://github.com/keynetra/keynetra-core/tree/main/',
+          path: 'docs',
+          editUrl: 'https://github.com/keynetra/keynetra/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -34,7 +34,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/keynetra/keynetra-core/tree/main/',
+          editUrl: 'https://github.com/keynetra/keynetra/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -76,7 +76,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/keynetra/keynetra-core',
+          href: 'https://github.com/keynetra/keynetra',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,7 +115,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/keynetra/keynetra-core',
+              href: 'https://github.com/keynetra/keynetra',
             },
           ],
         },
